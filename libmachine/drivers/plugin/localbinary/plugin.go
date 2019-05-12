@@ -18,7 +18,7 @@ var (
 	defaultTimeout               = 10 * time.Second
 	CurrentBinaryIsDockerMachine = false
 	CoreDrivers                  = []string{"amazonec2", "azure", "digitalocean",
-		"exoscale", "generic", "google", "hyperv", "none", "openstack",
+		"exoscale", "generic", "google", "hcloud", "hyperv", "none", "openstack",
 		"rackspace", "softlayer", "virtualbox", "vmwarefusion",
 		"vmwarevcloudair", "vmwarevsphere"}
 )

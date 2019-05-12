@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	"github.com/docker/machine/drivers/hcloud"
 	"os"
 	"strconv"
 
@@ -179,6 +180,8 @@ func runDriver(driverName string) {
 		plugin.RegisterDriver(generic.NewDriver("", ""))
 	case "google":
 		plugin.RegisterDriver(google.NewDriver("", ""))
+	case "hcloud":
+		plugin.RegisterDriver(hcloud.NewDriver("", ""))
 	case "hyperv":
 		plugin.RegisterDriver(hyperv.NewDriver("", ""))
 	case "none":
